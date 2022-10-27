@@ -29,6 +29,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'users.apps.UsersConfig',
     'stackQA.apps.StackqaConfig',
+    'likes.apps.LikesConfig'
 ]
 
 MIDDLEWARE = [
