@@ -1,19 +1,8 @@
 from django.db import models
-from django.contrib.auth.models import AbstractUser, User
+from django.contrib.auth.models import User
 
+from specialties.models import Classe
 # your models here.
-class Speciality(models.Model):
-    # django already set auto primary key
-    Speciality_name = models.CharField(max_length=200)
-
-
-class Classe(models.Model):
-    class_name = models.CharField(max_length=200)
-    speciality = models.ForeignKey(Speciality, on_delete=models.CASCADE)
-
-
-class Subject(models.Model):
-    class_id = models.ForeignKey(Classe, on_delete=models.CASCADE)
 
 
 class Person(models.Model):
